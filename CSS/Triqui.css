@@ -1,0 +1,19 @@
+html {
+  background-color: beige;
+}
+
+body {
+  position: relative;
+  height: 660px;
+  width: 660px;
+  border: 2px solid black;
+}
+
+.button {
+  margin-top: 0;
+  margin-right: 0;
+  display: inline-block;
+  height: 200px;
+  width: 200px;
+  border: 2px solid blue;
+}
