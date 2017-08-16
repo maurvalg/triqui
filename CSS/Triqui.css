@@ -3,6 +3,7 @@ html {
 }
 
 body {
+  vertical-align: center;
   position: relative;
   height: 660px;
   width: 660px;
@@ -10,8 +11,6 @@ body {
 }
 
 .button {
-  margin-top: 0;
-  margin-right: 0;
   display: inline-block;
   height: 200px;
   width: 200px;
