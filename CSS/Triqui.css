@@ -1,16 +1,46 @@
 html {
   background-color: beige;
+  margin: 0 auto;
+  width: 100%;
+}
+
+h1 {
+  color: Blue;
+  text-align: center;
+  font-size: 48px;
+  font-family: fantasy;
+}
+
+.Marcador {
+  margin-right: 50%;
+  text-align: center;
+  margin: 20px;
+  border: 2px solid black;
+  border-radius:10px;
+  width: 20%;
+  height: 30%;
+  position: relative;
+  left: 39%;
+}
+.win{
+  height: 100px;
+  width: 100px;
+  font-size: 20px;
+  margin-right: 30px;
+}
+.veces {
+  height: 100px;
+  width: 100px;
+  font-size: 20px;
+  margin-left: 30px;
 }
 
 section {
   position: relative;
-  height: 660px;
+  left: 25%;
+  height: 652px;
   width: 660px;
   border: 2px solid black;
-}
-
-h1 {
-
 }
 
 li.button {
@@ -32,4 +62,7 @@ li.button {
   width: 100px;
   font-size: 24px;
   cursor: pointer;
+  position: relative;
+  top: 100%;
+  left: 48%;
 }
