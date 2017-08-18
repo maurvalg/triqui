@@ -1,5 +1,5 @@
 window.onload = function() {
-  var jugador = "X";
+  var jugador1 = "X";
   var jugador2 = "O";
   var turno = turno + 1;
   var que_turno ;
@@ -15,33 +15,37 @@ window.onload = function() {
   var c8 = document.querySelector("#c8");
   var c9 = document.querySelector("#c9");
 
-  console.log("c5");
-
-  function triqui(){
-    alert ('triqui');
-  }
-
-  function cargarDocumento(){
-    document.getElementById('c9').addEventListener('click',triqui);
-  }
-
-  window.addEventListener('load',cargarDocumento);
-
-  console.log(triqui);
-
-
   opcion.forEach(function(element,idx){
-      element.addEventListener("click", function(event){
-        cont = cont + 1;
-        if (cont%2 === 1){
+    element.addEventListener("click", function(event){
+      console.log(element.innerText);
+      cont = cont + 1;
+      if (cont%2 === 1 ){
+        if (element.innerText !== "O" && element.innerText !== "X") {
           element.innerText = "O";
-        }else if (cont%2 === 0){
-          element.innerText = "X";
+        }else {
+          cont -= 1;
+          alert("Casilla Ocupada");
         }
-      console.log("Number", event.target.innerText);
-      });
+      }else {
+        if (element.innerText !=="O" && element.innerText!=="X"){
+          element.innerText = "X";
+        }else {
+          cont -= 1;
+          alert("Casilla Ocupada");
+        }
+      }
+    });
   });
-  function myFunction(){
-    location.reload();
+
+  function jugadorx(){
+    //Horizontal
+    if (c1 === jugador1 && c2 === jugador1 && c3 === jugador1) {
+      alert("jugador es el ganador");
+    }else if (c4 === jugador1 && c5 === jugador1 && c6 === jugador1) {
+      alert("jugador es el ganador");
+    }else if (c7 === jugador1 && c8 === jugador1 && c9 === jugador1) {
+      alert("jugador es el ganador");
+    }
   }
 };
+ 
