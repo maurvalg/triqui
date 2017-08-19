@@ -40,7 +40,7 @@ section {
   top: 100%;
   left: 30%;
   height: 652px;
-  width: 660px;
+  width: 652px;
   border: 2px solid black;
 }
 
@@ -66,4 +66,7 @@ li.button {
   position: relative;
   top: 100%;
   left: 48%;
+}
+ul{
+  font-size: 0;
 }
