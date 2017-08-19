@@ -42,26 +42,33 @@ window.onload = function() {
 
     if (c1 === jugador1 && c2 === jugador1 && c3 === jugador1) {
       alert("Jugador 1 es el ganador");
+      borrar();
     }else if (c4 === jugador1 && c5 === jugador1 && c6 === jugador1) {
       alert("Jugador 1 es el ganador");
+      borrar();
     }else if (c7 === jugador1 && c8 === jugador1 && c9 === jugador1) {
       alert("Jugador 1 es el ganador");
-
+      borrar();
       //Vertical
 
     }else if (c1 === jugador1 && c4 === jugador1 && c7 === jugador1) {
       alert("Jugador 1 es el ganador");
+      borrar();
     }else if (c2 === jugador1 && c5 === jugador1 && c8 === jugador1) {
       alert('Jugador 1 es el ganador');
+      borrar();
     }else if (c3 === jugador1 && c6 === jugador1 && c9 === jugador1) {
       alert('Jugador 1 es el ganado');
+      borrar();
 
       //Diagonal
 
     }else if (c1 === jugador1 && c5 === jugador1 && c9 === jugador1) {
       alert('Jugador 1 es el ganado');
+      borrar();
     }else if (c3 === jugador1 && c5 === jugador1 && c7 === jugador1) {
       alert('Jugador 1 es el ganado');
+      borrar();
     }
   }
 
@@ -80,33 +87,53 @@ window.onload = function() {
 
     if (c1 === jugador2 && c2 === jugador2 && c3 === jugador2) {
       alert("Jugador 2 es el ganador");
+      borrar();
     }else if (c4 === jugador2 && c5 === jugador2 && c6 === jugador2) {
       alert("Jugador 2 es el ganador");
+      borrar();
     }else if (c7 === jugador2 && c8 === jugador2 && c9 === jugador2) {
       alert("Jugador 2 es el ganador");
+      borrar();
 
       //Vertical
 
     }else if (c1 === jugador2 && c4 === jugador2 && c7 === jugador2) {
       alert("Jugador 2 es el ganador");
+      borrar();
     }else if (c2 === jugador2 && c5 === jugador2 && c8 === jugador2) {
       alert("Jugador 2 es el ganador");
+      borrar();
     }else if (c3 === jugador2 && c6 === jugador2 && c9 === jugador2) {
       alert("Jugador 2 es el ganador");
+      borrar();
 
       //Diagonal
 
     }else if (c1 === jugador2 && c5 === jugador2 && c9 === jugador2) {
       alert("Jugador 2 es el ganador");
+      borrar();
     }else if (c3 === jugador2 && c5 === jugador2 && c7 === jugador2) {
       alert("Jugador 2 es el ganador");
+      borrar();
     }
   }
 
   var button_reset = document.getElementById("NuevoJuego");
   button_reset.addEventListener('click',function(){
+    borrar();
     //1. Definir un for que recorra los li botones
     //2. Por cada li botton, propiedad innerText le asignamos ""
-    console.log("reset");
   });
+
+
+  function borrar(){
+   var lista = document.querySelectorAll("#tablero>li");
+     for(var i = 0; i <lista.length; i+= 1){
+       lista[i].innerText = null;
+      }
+   }
+
+
+
+
 };
