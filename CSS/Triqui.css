@@ -7,7 +7,7 @@ html {
 h1 {
   color: Blue;
   text-align: center;
-  font-size: 48px;
+  font-size: 56px;
   font-family: fantasy;
 }
 
@@ -35,13 +35,36 @@ h1 {
   margin-left: 30px;
 }
 
-section {
-  position: relative;
-  top: 100%;
-  left: 30%;
+#info {
+  margin-left: 10px;
+  border: 2px solid black;
+  width: 20%;
+  height: 80%;
+  display: inline-block;
+}
+
+#rules {
+  color: BurlyWood;
+  text-align: center;
+  font-size: 24px;
+  font-style: oblique;
+  font-family: cursive, arial;
+}
+
+p{
+  list-style-type: lower-latin;
+  margin-top: 20px;
+  font-family: monospace;
+  font-size: 14px;
+}
+
+#lista {
+  display: inline-block;
+  position: absolute;
   height: 652px;
   width: 652px;
   border: 2px solid black;
+  margin-left: 20%;
 }
 
 li.button {
@@ -60,12 +83,13 @@ li.button {
   border: 2px solid black;
   border-radius:30px;
   height: 100px;
-  width: 100px;
+  width: 200px;
   font-size: 24px;
   cursor: pointer;
-  position: relative;
+  position: absolute;
   top: 100%;
-  left: 48%;
+  margin-top: 100px;
+  margin-left: 40%;
 }
 ul{
   font-size: 0;
