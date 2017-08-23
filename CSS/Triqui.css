@@ -1,11 +1,11 @@
 html {
-  background-color: beige;
+  background-color: white;
   margin: auto;
   width: auto;
 }
 
 h1 {
-  color: Blue;
+  color: Navy;
   text-align: center;
   font-size: 56px;
   font-family: fantasy;
@@ -49,13 +49,17 @@ h1 {
   font-size: 24px;
   font-style: oblique;
   font-family: cursive, arial;
+  margin-bottom: 5px;
 }
 
-p{
-  list-style-type: lower-latin;
-  margin-top: 20px;
-  font-family: monospace;
-  font-size: 14px;
+ol {
+  list-style-type: disc;
+  margin-bottom: 10px;
+}
+
+.reglas {
+  margin: 10px 5px 0 20px;
+  text-align: justify;
 }
 
 #lista {
@@ -63,8 +67,8 @@ p{
   position: absolute;
   height: 652px;
   width: 652px;
-  border: 2px solid black;
-  margin-left: 20%;
+  border: 2px solid orange;
+  margin-left: 240px;
 }
 
 li.button {
@@ -74,9 +78,29 @@ li.button {
   display: inline-block;
   height: 212px;
   width: 212px;
-  border: 2px solid blue;
+  border: 2px solid DarkSlateGrey;
   font-size: 48px;
   text-align: center;
+  position: relative;
+  background-color: lightgrey;
+}
+
+.circulo {
+  position: absolute;
+  top: 10%;
+  left: 15%;
+  color: blue;
+  font-size: 200px;
+  font-family: cursive;;
+}
+
+.equis {
+  position: absolute;
+  top: 10%;
+  left: 15%;
+  font-size: 200px;
+  color: red;
+  font-family: cursive;
 }
 
 #NuevoJuego {
@@ -86,11 +110,24 @@ li.button {
   width: 200px;
   font-size: 24px;
   cursor: pointer;
-  position: absolute;
-  top: 100%;
-  margin-top: 100px;
-  margin-left: 40%;
+  position: absolute;;
+  top: 80%;
+  left: 45%;
+
 }
+
+#Nuevo {
+  border: 2px solid black;
+  border-radius:30px;
+  height: 100px;
+  width: 200px;
+  font-size: 24px;
+  cursor: pointer;
+  position: absolute;
+  top: 80%;
+  left: 65%;
+}
+
 ul{
   font-size: 0;
 }
