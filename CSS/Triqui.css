@@ -63,15 +63,14 @@ ol {
 }
 
 #lista {
-  display: inline-block;
-  position: absolute;
+  float: left;
   height: 652px;
   width: 652px;
   border: 2px solid orange;
   margin-left: 240px;
 }
 
-li.button {
+.button {
   vertical-align: top;
   margin-top: 1px;
   margin-left: 1px;
@@ -110,9 +109,10 @@ li.button {
   width: 200px;
   font-size: 24px;
   cursor: pointer;
-  position: absolute;;
-  top: 80%;
-  left: 45%;
+  float: left;
+  margin-left: 300px;
+  margin-top: 20px;
+  clear: left;
 
 }
 
@@ -123,9 +123,9 @@ li.button {
   width: 200px;
   font-size: 24px;
   cursor: pointer;
-  position: absolute;
-  top: 80%;
-  left: 65%;
+  float: left;
+  margin-left: 100px;
+  margin-top: 20px;
 }
 
 ul{
